@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+@media (max-width: 600px) {
+  .container .form {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .container .form-input {
+    width: 100%;
+  }
+
+  .btn-converter {
+    text-align: center;
+  }
+
+  .btn-converter button {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  img {
+    max-width: 40%;
+  }
+}
+
+ /* Default desktop/tablet layout */
+.container {
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container .form {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .form-input {
+  display: flex;
+  gap: 5px;
+}
+
+.container img {
+  max-width: 40px;
+  height: auto;
+}
+
+.btn-converter {
+  margin-top: 20px;
+}
+
+/* Tablet view: adjust spacing */
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .container .form {
+    gap: 15px;
+  }
+
+  .container img {
+    max-width: 70%;
+  }
+}
+/* ============ landscape for both moblie and tablet=========*/
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    .container .child {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .child .form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        height: auto;
+    }
+
+    .form-input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button#convert {
+        padding: 12px 20px;
+        font-size: 15px;
+        margin-top: 15px;
+        background-color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    button#convert:hover {
+        background-color: orangered;
+        color: white;
+        box-shadow: 3px 2px 8px black;
+        border-color: orangered;
+        transition: 1.8s ease;
+    }
+}
+
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .child{
+    border-radius: 10px;
+    width: 70%;
+    position: absolute;
+    margin: 0 auto;
+    padding: 20px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    box-shadow: 1px 2px 5px black;
+    align-items: center;
+    background-color: white;
+}
+.container .child h1{
+    font-family: "Lobster", sans-serif;
+    padding: 10px;
+    background: transparent;
+    font-size: 80%; 
+    font-weight: bold;
+    color: orangered;
+    font-size: x-large;
+
+}
+.container .child .form{
+display: flex;
+align-items: center;
+gap: 24px;
+padding: 20px;
+height: 50vh;
+}
+input, select{
+    display: flex;
+    align-items: center;
+    border-color: orangered;
+    width: 120px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+ .form-input{
+    display: flex;
+    align-items: center;
+}
+.form-input img {
+    margin-bottom: 5px;
+    width: 50px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 45%;
+}
+
+.form-input label{
+    display: flex;
+    justify-content: baseline;
+    text-align: start;
+    padding: 5px;
+    font-weight: 500;
+}
+.form-input i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; 
+    cursor: pointer;
+    border-radius: 48%;
+    border: 1px solid;
+    transition: 0.3s;
+    transform: rotate(0deg);
+}
+.btn-converter{
+    padding: 20px;
+}
+#userAPI {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#convert {
+  display: block;         
+  margin: 20px auto;        
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button{ 
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+   background-color: orangered;
+   box-shadow: 3px 2px 8px black;
+   transition: 1.8s ease;
+   color: white;
+   border-color: orangered;
+
+}

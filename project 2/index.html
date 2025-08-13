@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <section class="container">
+        
+        <div class="child">
+            <h1>currency converter</h1>
+          <div class="form">
+            <div class="form-input">
+                <label>Amount</label>
+                <span id="selectedSymbol"></span>
+                <input type="text" id="amount" placeholder="Enter your Price">
+            </div>
+            <div class="form-input">
+                <label>From</label>
+                <img id="fromCountryImage">
+                <select id="fromCountry"></select>
+            </div>
+            <div class="form-input">
+        
+                <label>To</label>
+                <img id="toCountryImage">
+                <select id="toCountry"></select>
+            </div>
+
+        </div>
+        
+        <div class="btn-converter">
+            <div id="userAPI"></div>
+            <button id="convert">convert</button>
+            
+            
+        </div>
+       </div>
+  
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
